@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="CSS/fontawsome/css/all.min.css">
+        <script type="text/javascript" lang="javascript"></script>
+    </head>
+
+<body>
+    <div class="reg-main">
+        <div class="reg-content">
+            <form action="" name="formpage" onsubmit="return validateForm()" method="POST">
+                <div class="reg-head">User Registration</div>
+                
+                <div class="formdesign" id="form-container">
+                    <!-- Full Name -->
+                    <div>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        <b><span id="nameError" class="formerror"></span></b>
+                    </div>
+                    <br>
+
+                    <!-- Age -->
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                        <b><span id="ageError" class="formerror"></span></b>
+                    </div>
+                    <br>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <b><span id="emailError" class="formerror"></span></b>
+                    </div>
+                    <br>
+
+                    <!-- Password -->
+                    <div>
+                        <label for="password">Create Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Create a secure password" required>
+                        <b><span id="passwordError" class="formerror"></span></b>
+                    </div>
+                    <br>
+
+                    <!-- Address -->
+                    <div>
+                        <label for="address">Residential Address:</label>
+                        <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+                        <b><span id="addressError" class="formerror"></span></b>
+                    </div>
+                    <br>
+
+                    <!-- Buttons -->
+                    <div>
+                        <button type="submit">Register</button>
+                        <button type="button" onclick="window.location.href = 'Loginpage.html'">Already have an account? Login</button>
+                    </div>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="alert">
+                    <p>By registering, you agree to our <a href="#">Terms of Service</a>, <a href="#">Privacy Policy</a>, and <a href="#">Cookie Policy</a>. You may receive notifications and can opt out at any time.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
